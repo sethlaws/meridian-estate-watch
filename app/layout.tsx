@@ -39,6 +39,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: SITE_URL,
   },
+  verification: {
+    google: "sZKfvrI14G6zAY8OU3Hf4gGlVQsj2Ka9sdUSP3y1H0Q",
+  },
   openGraph: {
     title: "Home Watch Services in Charlotte, NC | Meridian Estate Watch",
     description:
