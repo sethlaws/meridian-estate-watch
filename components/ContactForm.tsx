@@ -1,8 +1,8 @@
 "use client";
 
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 
-const RECIPIENT = "info@meridianestatewatch.com";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mkoadonp";
 
 const propertyLabels: Record<string, string> = {
   primary: "Primary Home (Extended Travel)",
@@ -14,33 +14,54 @@ const propertyLabels: Record<string, string> = {
 };
 
 export default function ContactForm() {
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  const [status, setStatus] = useState<
+    "idle" | "submitting" | "success" | "error"
+  >("idle");
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
 
+    // Provide a friendly, readable property-type label to the email
+    const propertyKey = (data.get("propertyType") as string) || "";
+    data.set("propertyType", propertyLabels[propertyKey] || "Not specified");
+    // Give the notification email a clear subject line
     const firstName = (data.get("firstName") as string)?.trim() || "";
     const lastName = (data.get("lastName") as string)?.trim() || "";
-    const email = (data.get("email") as string)?.trim() || "";
-    const phone = (data.get("phone") as string)?.trim() || "";
-    const propertyKey = (data.get("propertyType") as string) || "";
-    const property = propertyLabels[propertyKey] || "Not specified";
-    const message = (data.get("message") as string)?.trim() || "";
+    data.set("_subject", `Website Inquiry from ${firstName} ${lastName}`.trim());
 
-    const subject = `Website Inquiry from ${firstName} ${lastName}`.trim();
-    const body = [
-      `Name: ${firstName} ${lastName}`,
-      `Email: ${email}`,
-      `Phone: ${phone || "Not provided"}`,
-      `Property Type: ${property}`,
-      "",
-      "Message:",
-      message,
-    ].join("\n");
+    setStatus("submitting");
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
 
-    window.location.href = `mailto:${RECIPIENT}?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
+  if (status === "success") {
+    return (
+      <div className="bg-navy-50 border border-navy-100 rounded-xl p-8 text-center">
+        <div className="text-4xl mb-3">✅</div>
+        <h3 className="text-xl font-bold text-navy-900 mb-2">
+          Thank you — your message has been sent!
+        </h3>
+        <p className="text-navy-600 text-sm">
+          We&apos;ve received your inquiry and will be in touch within one
+          business day.
+        </p>
+      </div>
+    );
   }
 
   return (
@@ -154,10 +175,17 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="w-full bg-gold-500 hover:bg-gold-600 text-navy-900 font-bold py-4 rounded-lg transition-colors text-base"
+        disabled={status === "submitting"}
+        className="w-full bg-gold-500 hover:bg-gold-600 disabled:opacity-60 disabled:cursor-not-allowed text-navy-900 font-bold py-4 rounded-lg transition-colors text-base"
       >
-        Send Message
+        {status === "submitting" ? "Sending..." : "Send Message"}
       </button>
+      {status === "error" && (
+        <p className="text-sm text-red-600 text-center">
+          Sorry — something went wrong sending your message. Please try again, or
+          email us directly at info@meridianestatewatch.com.
+        </p>
+      )}
       <p className="text-xs text-navy-400 text-center">
         We typically respond within one business day.
       </p>
