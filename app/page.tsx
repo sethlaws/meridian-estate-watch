@@ -461,10 +461,11 @@ export default function HomePage() {
             </h2>
             <p className="text-navy-500 max-w-2xl mx-auto leading-relaxed">
               Meridian Estate Watch provides professional estate watch and
-              property monitoring throughout Charlotte, North Carolina and the
-              surrounding communities. Whether your second home sits on Lake
-              Norman, in Ballantyne, or out in Waxhaw, we keep a trained eye on
-              it while you&apos;re away.
+              property monitoring across North Carolina — from the greater
+              Charlotte region and the Lake Norman area to the mountains of Lake
+              Lure and the coastal communities of Wrightsville Beach and the
+              Brunswick beaches. Wherever your second home, vacation property, or
+              estate sits, we keep a trained eye on it while you&apos;re away.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -484,6 +485,18 @@ export default function HomePage() {
               {
                 area: "Union County",
                 places: "Waxhaw, Weddington, Marvin, Wesley Chapel",
+              },
+              {
+                area: "Lake Lure & Western NC",
+                places: "Lake Lure, Chimney Rock, Rutherford County",
+              },
+              {
+                area: "Wrightsville Beach",
+                places: "Wrightsville Beach, Wilmington, Waterfront NC",
+              },
+              {
+                area: "Brunswick Beaches",
+                places: "Oak Island, Holden Beach, Ocean Isle, Sunset Beach",
               },
               {
                 area: "Lake Wylie & Steele Creek",
