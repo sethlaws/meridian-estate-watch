@@ -17,14 +17,14 @@ export default function Header() {
   return (
     <header className="bg-navy-900 text-white sticky top-0 z-50 shadow-lg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo.svg"
               alt="Meridian Estate Watch"
-              className="h-9 w-auto"
+              className="h-16 w-auto"
             />
           </Link>
 
