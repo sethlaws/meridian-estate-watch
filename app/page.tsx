@@ -114,10 +114,6 @@ const faqs = [
     a: "Most insurance providers and home watch professionals recommend at least weekly visits for unoccupied homes. Many issues — like a slow plumbing leak or an HVAC failure — cause major damage within days, so regular visits are key. We offer weekly, bi-weekly, and monthly plans based on your needs.",
   },
   {
-    q: "What areas around Charlotte do you serve?",
-    a: "We serve Charlotte, NC and the surrounding communities, including the Lake Norman area (Cornelius, Davidson, Huntersville, Mooresville), South Charlotte and Ballantyne, and Union County (Waxhaw, Weddington, Marvin). If you're nearby and not listed, just ask — we likely cover your area.",
-  },
-  {
     q: "Are you licensed and insured?",
     a: "Yes. Meridian Estate Watch is fully insured and carries professional liability coverage, and we follow National Home Watch Association best practices. Every inspection follows a documented checklist for consistency and accountability.",
   },
