@@ -461,11 +461,10 @@ export default function HomePage() {
             </h2>
             <p className="text-navy-500 max-w-2xl mx-auto leading-relaxed">
               Meridian Estate Watch provides professional estate watch and
-              property monitoring across North Carolina — from the greater
-              Charlotte region and the Lake Norman area to the mountains of Lake
-              Lure and the coastal communities of Wrightsville Beach and the
-              Brunswick beaches. Wherever your second home, vacation property, or
-              estate sits, we keep a trained eye on it while you&apos;re away.
+              property monitoring throughout North Carolina. Whether your second
+              home sits on Lake Norman, Lake Wylie, Lake Lure, Wrightsville
+              Beach, or any of the Brunswick Beaches, we keep a trained eye on it
+              while you&apos;re away.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
