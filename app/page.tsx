@@ -457,7 +457,7 @@ export default function HomePage() {
               Areas We Serve
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mt-2 mb-4">
-              Estate Watch Services Across the Charlotte Area
+              Estate Watch Services Across North Carolina
             </h2>
             <p className="text-navy-500 max-w-2xl mx-auto leading-relaxed">
               Meridian Estate Watch provides professional estate watch and
