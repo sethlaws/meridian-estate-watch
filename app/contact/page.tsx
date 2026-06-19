@@ -62,10 +62,10 @@ export default function ContactPage() {
                     Email
                   </p>
                   <a
-                    href="mailto:info@meridianhomewatchgroup.com"
+                    href="mailto:info@meridianestatewatch.com"
                     className="text-navy-900 font-semibold hover:text-gold-600 transition-colors"
                   >
-                    info@meridianhomewatchgroup.com
+                    info@meridianestatewatch.com
                   </a>
                 </div>
               </div>
