@@ -17,9 +17,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Home Watch Services in Charlotte, NC",
+  title: "Estate Watch Services in Charlotte, NC",
   description:
-    "Meridian Estate Watch provides trusted home watch and property monitoring in Charlotte, NC and surrounding areas — Lake Norman, Ballantyne, Waxhaw and beyond. Protecting second homes, vacation properties, and estates while you're away. Schedule a free consultation.",
+    "Meridian Estate Watch provides trusted estate watch and property monitoring in Charlotte, NC and surrounding areas — Lake Norman, Ballantyne, Waxhaw and beyond. Protecting second homes, vacation properties, and estates while you're away. Schedule a free consultation.",
   alternates: { canonical: "https://meridianestatewatch.com" },
 };
 
@@ -182,7 +182,7 @@ export default function HomePage() {
                 What Is Estate Watch — And Why Does It Matter?
               </h2>
               <p className="text-navy-600 text-lg leading-relaxed mb-5">
-                Home watch is a scheduled, professional inspection of your
+                Estate watch is a scheduled, professional inspection of your
                 unoccupied property while you&apos;re away. A trained inspector
                 visits your home on a regular basis, checks every area inside
                 and out, and documents the condition with detailed photo reports.
@@ -192,7 +192,7 @@ export default function HomePage() {
                 failed air conditioning unit. A broken window seal. When
                 nobody&apos;s watching, those minor issues escalate —
                 undetected mold, structural water damage, and pest infestations
-                can cost tens of thousands to remediate. Home watch stops that
+                can cost tens of thousands to remediate. Estate watch stops that
                 spiral early.
               </p>
               <p className="text-navy-600 leading-relaxed mb-8">
@@ -415,10 +415,10 @@ export default function HomePage() {
               Areas We Serve
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mt-2 mb-4">
-              Home Watch Services Across the Charlotte Area
+              Estate Watch Services Across the Charlotte Area
             </h2>
             <p className="text-navy-500 max-w-2xl mx-auto leading-relaxed">
-              Meridian Estate Watch provides professional home watch and
+              Meridian Estate Watch provides professional estate watch and
               property monitoring throughout Charlotte, North Carolina and the
               surrounding communities. Whether your second home sits on Lake
               Norman, in Ballantyne, or out in Waxhaw, we keep a trained eye on
