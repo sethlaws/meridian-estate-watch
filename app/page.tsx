@@ -104,9 +104,50 @@ const process = [
   },
 ];
 
+const faqs = [
+  {
+    q: "What is home watch (estate watch)?",
+    a: "Home watch — also called estate watch — is a regular, professional inspection of a vacant or unoccupied property. On each visit we walk the entire home inside and out, check the major systems, and send you a documented photo report so you always know your property's condition while you're away.",
+  },
+  {
+    q: "How often should a vacant or second home be checked?",
+    a: "Most insurance providers and home watch professionals recommend at least weekly visits for unoccupied homes. Many issues — like a slow plumbing leak or an HVAC failure — cause major damage within days, so regular visits are key. We offer weekly, bi-weekly, and monthly plans based on your needs.",
+  },
+  {
+    q: "What areas around Charlotte do you serve?",
+    a: "We serve Charlotte, NC and the surrounding communities, including the Lake Norman area (Cornelius, Davidson, Huntersville, Mooresville), South Charlotte and Ballantyne, and Union County (Waxhaw, Weddington, Marvin). If you're nearby and not listed, just ask — we likely cover your area.",
+  },
+  {
+    q: "Are you licensed and insured?",
+    a: "Yes. Meridian Estate Watch is fully insured and carries professional liability coverage, and we follow National Home Watch Association best practices. Every inspection follows a documented checklist for consistency and accountability.",
+  },
+  {
+    q: "Will my insurance require home watch visits?",
+    a: "Many homeowners' insurance policies require that a vacant property be checked on a regular schedule — and some claims can be denied if it wasn't. Our documented, time-stamped reports give you proof that your home was being professionally monitored.",
+  },
+  {
+    q: "What happens if you find a problem?",
+    a: "If we find an issue, we contact you right away, recommend a qualified local contractor, and can coordinate and supervise the repair on your behalf — so you don't have to fly home for a service call.",
+  },
+];
+
 export default function HomePage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* ── HERO ── */}
       <section className="relative bg-navy-900 text-white overflow-hidden">
         {/* Background photo */}
@@ -469,6 +510,33 @@ export default function HomePage() {
             </Link>{" "}
             — we likely serve your area too.
           </p>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="py-20 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <span className="text-gold-500 text-sm font-semibold uppercase tracking-widest">
+              Frequently Asked Questions
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mt-2">
+              Estate Watch Questions, Answered
+            </h2>
+          </div>
+          <div className="divide-y divide-navy-100">
+            {faqs.map(({ q, a }) => (
+              <details key={q} className="group py-5">
+                <summary className="flex items-center justify-between cursor-pointer list-none font-semibold text-navy-900">
+                  {q}
+                  <span className="text-gold-500 text-xl ml-4 shrink-0 transition-transform group-open:rotate-45">
+                    +
+                  </span>
+                </summary>
+                <p className="text-navy-600 leading-relaxed mt-3">{a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
