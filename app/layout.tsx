@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   description:
     "Professional home watch and property monitoring in Charlotte, NC and surrounding areas — Lake Norman, Ballantyne, Waxhaw and more. We protect your second home, vacation property, or estate while you're away. Free consultation.",
   keywords: [
+    "Meridian Estate Watch",
+    "Meridian Home Watch",
+    "Meridian Home Watch Group",
+    "Meridian Estate Watch Charlotte",
     "home watch Charlotte NC",
     "home watch services Charlotte",
     "house watching Charlotte",
@@ -76,6 +80,12 @@ const localBusinessSchema = {
   "@type": "HomeAndConstructionBusiness",
   "@id": `${SITE_URL}/#business`,
   name: "Meridian Estate Watch",
+  alternateName: [
+    "Meridian Home Watch",
+    "Meridian Home Watch Group",
+    "Meridian Estate Watch Charlotte",
+    "Meridian Watch",
+  ],
   description:
     "Professional home watch and property monitoring services for second homes, vacation properties, and estates in Charlotte, NC and surrounding communities.",
   url: SITE_URL,
