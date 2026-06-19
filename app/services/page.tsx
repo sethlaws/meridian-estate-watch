@@ -16,9 +16,10 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services | Meridian Estate Watch",
+  title: "Home Watch Services in Charlotte, NC",
   description:
-    "Explore our full range of professional estate watch and property monitoring services in Charlotte, NC.",
+    "Explore our full range of home watch and property monitoring services in Charlotte, NC and surrounding areas — interior/exterior inspections, HVAC and plumbing checks, security verification, and more for second homes and estates.",
+  alternates: { canonical: "https://meridianestatewatch.com/services" },
 };
 
 const services = [

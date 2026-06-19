@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   ShieldCheck,
@@ -14,6 +15,13 @@ import {
   Wind,
   Anchor,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Home Watch Services in Charlotte, NC",
+  description:
+    "Meridian Estate Watch provides trusted home watch and property monitoring in Charlotte, NC and surrounding areas — Lake Norman, Ballantyne, Waxhaw and beyond. Protecting second homes, vacation properties, and estates while you're away. Schedule a free consultation.",
+  alternates: { canonical: "https://meridianestatewatch.com" },
+};
 
 const services = [
   {
@@ -396,6 +404,70 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── SERVICE AREA ── */}
+      <section className="py-20 bg-navy-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <span className="text-gold-500 text-sm font-semibold uppercase tracking-widest">
+              Areas We Serve
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-navy-900 mt-2 mb-4">
+              Home Watch Services Across the Charlotte Area
+            </h2>
+            <p className="text-navy-500 max-w-2xl mx-auto leading-relaxed">
+              Meridian Estate Watch provides professional home watch and
+              property monitoring throughout Charlotte, North Carolina and the
+              surrounding communities. Whether your second home sits on Lake
+              Norman, in Ballantyne, or out in Waxhaw, we keep a trained eye on
+              it while you&apos;re away.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              {
+                area: "Charlotte & Uptown",
+                places: "Myers Park, SouthPark, Dilworth, Eastover, Ballantyne",
+              },
+              {
+                area: "Lake Norman",
+                places: "Cornelius, Davidson, Huntersville, Mooresville",
+              },
+              {
+                area: "South Charlotte",
+                places: "Ballantyne, Pineville, Matthews, Mint Hill",
+              },
+              {
+                area: "Union County",
+                places: "Waxhaw, Weddington, Marvin, Wesley Chapel",
+              },
+              {
+                area: "Lake Wylie & Steele Creek",
+                places: "Steele Creek, Lake Wylie, Fort Mill area",
+              },
+              {
+                area: "Surrounding Communities",
+                places: "Concord, Harrisburg, Indian Trail & more",
+              },
+            ].map(({ area, places }) => (
+              <div
+                key={area}
+                className="bg-white border border-navy-100 rounded-xl p-5"
+              >
+                <h3 className="font-bold text-navy-900 mb-1">{area}</h3>
+                <p className="text-navy-500 text-sm leading-relaxed">{places}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-navy-500 text-sm mt-8">
+            Don&apos;t see your neighborhood?{" "}
+            <Link href="/contact" className="text-gold-600 font-semibold hover:underline">
+              Contact us
+            </Link>{" "}
+            — we likely serve your area too.
+          </p>
         </div>
       </section>
 

@@ -3,9 +3,10 @@ import { ArrowRight, ShieldCheck, Users, Star, MapPin } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Meridian Estate Watch",
+  title: "About Our Charlotte Home Watch Company",
   description:
-    "Learn about Meridian Estate Watch — locally owned, fully insured, and dedicated to protecting Charlotte-area properties.",
+    "Meridian Estate Watch is a locally owned, fully insured home watch company serving Charlotte, NC and surrounding communities. Learn about our story, values, and commitment to protecting your property.",
+  alternates: { canonical: "https://meridianestatewatch.com/about" },
 };
 
 const values = [
