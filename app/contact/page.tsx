@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact a Charlotte Estate Watch Professional",
+  title: "Contact a Charlotte Home Watch Professional",
   description:
-    "Contact Meridian Estate Watch to schedule a free estate watch consultation for your Charlotte, NC area property. Call 1-704-879-1198 or send us a message.",
+    "Contact Meridian Estate Watch to schedule a free home watch consultation for your Charlotte, NC area property. Call 1-704-879-1198 or send us a message.",
   alternates: { canonical: "https://meridianestatewatch.com/contact" },
 };
 

@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default:
-      "Estate Watch Services in Charlotte, NC | Meridian Estate Watch",
+      "Home Watch Services in Charlotte, NC | Meridian Estate Watch",
     template: "%s | Meridian Estate Watch",
   },
   description:
-    "Professional estate watch and property monitoring in Charlotte, NC and surrounding areas — Lake Norman, Ballantyne, Waxhaw and more. We protect your second home, vacation property, or estate while you're away. Free consultation.",
+    "Professional home watch and property monitoring in Charlotte, NC and surrounding areas — Lake Norman, Ballantyne, Waxhaw and more. We protect your second home, vacation property, or estate while you're away. Free consultation.",
   keywords: [
     "home watch Charlotte NC",
     "home watch services Charlotte",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     canonical: SITE_URL,
   },
   openGraph: {
-    title: "Estate Watch Services in Charlotte, NC | Meridian Estate Watch",
+    title: "Home Watch Services in Charlotte, NC | Meridian Estate Watch",
     description:
-      "Professional estate watch services protecting your Charlotte-area property while you're away.",
+      "Professional home watch services protecting your Charlotte-area property while you're away.",
     url: SITE_URL,
     siteName: "Meridian Estate Watch",
     locale: "en_US",
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Estate Watch Services in Charlotte, NC | Meridian Estate Watch",
+    title: "Home Watch Services in Charlotte, NC | Meridian Estate Watch",
     description:
-      "Professional estate watch services protecting your Charlotte-area property while you're away.",
+      "Professional home watch services protecting your Charlotte-area property while you're away.",
     images: ["/estate-hero.jpg"],
   },
   robots: {
@@ -77,7 +77,7 @@ const localBusinessSchema = {
   "@id": `${SITE_URL}/#business`,
   name: "Meridian Estate Watch",
   description:
-    "Professional estate watch and property monitoring services for second homes, vacation properties, and estates in Charlotte, NC and surrounding communities.",
+    "Professional home watch and property monitoring services for second homes, vacation properties, and estates in Charlotte, NC and surrounding communities.",
   url: SITE_URL,
   telephone: "+1-704-879-1198",
   email: "info@meridianestatewatch.com",

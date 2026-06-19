@@ -17,9 +17,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Estate Watch Services in Charlotte, NC",
+  title: "Home Watch Services in Charlotte, NC",
   description:
-    "Meridian Estate Watch provides trusted estate watch and property monitoring in Charlotte, NC and surrounding areas — Lake Norman, Ballantyne, Waxhaw and beyond. Protecting second homes, vacation properties, and estates while you're away. Schedule a free consultation.",
+    "Meridian Estate Watch provides trusted home watch and property monitoring in Charlotte, NC and surrounding areas — Lake Norman, Ballantyne, Waxhaw and beyond. Protecting second homes, vacation properties, and estates while you're away. Schedule a free consultation.",
   alternates: { canonical: "https://meridianestatewatch.com" },
 };
 
@@ -182,8 +182,9 @@ export default function HomePage() {
                 What Is Estate Watch — And Why Does It Matter?
               </h2>
               <p className="text-navy-600 text-lg leading-relaxed mb-5">
-                Estate watch is a scheduled, professional inspection of your
-                unoccupied property while you&apos;re away. A trained inspector
+                Estate watch — also known as home watch — is a scheduled,
+                professional inspection of your unoccupied property while
+                you&apos;re away. A trained inspector
                 visits your home on a regular basis, checks every area inside
                 and out, and documents the condition with detailed photo reports.
               </p>
