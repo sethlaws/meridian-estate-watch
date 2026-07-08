@@ -44,11 +44,11 @@ export default function Header() {
           {/* CTA + Mobile toggle */}
           <div className="flex items-center gap-4">
             <a
-              href="tel:+17048791198"
+              href="tel:+19106161880"
               className="hidden sm:flex items-center gap-2 text-sm font-medium text-gold-400 hover:text-gold-300 transition-colors"
             >
               <Phone size={15} />
-              1-704-879-1198
+              1-910-616-1880
             </a>
             <Link
               href="/contact"

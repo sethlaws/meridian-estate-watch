@@ -92,7 +92,7 @@ const localBusinessSchema = {
   description:
     "Professional home watch and property monitoring services for second homes, vacation properties, and estates in Charlotte, NC and surrounding communities.",
   url: SITE_URL,
-  telephone: "+1-704-879-1198",
+  telephone: "+1-910-616-1880",
   email: "info@meridianestatewatch.com",
   image: `${SITE_URL}/estate-hero.jpg`,
   logo: `${SITE_URL}/logo.svg`,
