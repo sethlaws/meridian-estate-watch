@@ -63,15 +63,16 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-navy-900 mb-6">Our Story</h2>
             <p className="mb-5 leading-relaxed">
               Welcome to Meridian Estate Watch, your trusted partner in home and
-              estate watch services in the Charlotte and Mecklenburg area. I&apos;m
-              Seth, and with over 15 years of experience overseeing high-value
-              assets, I bring a legacy of care and attention to detail. As a
-              retired yacht captain, I understand the importance of security,
-              discretion, and professionalism when it comes to safeguarding your
-              home or estate. Whether you are away for a season or need regular
-              property checks, I offer peace of mind through tailored, proactive
-              services. Let me watch over what matters most—so you can enjoy life
-              with confidence.
+              estate watch services in the Charlotte Mecklenburg area,
+              surrounding lakes, and NC Coastal communities. I&apos;m Seth Laws,
+              and with over 15 years of experience overseeing high-value assets,
+              I bring a legacy of care and attention to detail. As a retired
+              yacht captain, I understand the importance of security, discretion,
+              and professionalism when it comes to safeguarding your home or
+              estate. Whether you are away for a season or need regular property
+              checks, I offer peace of mind through tailored, proactive services.
+              Let me watch over what matters most—so you can enjoy life with
+              confidence.
             </p>
             <p className="mb-5 leading-relaxed">
               Meridian Estate Watch was founded on a simple observation:
