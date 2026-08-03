@@ -58,8 +58,21 @@ export default function AboutPage() {
 
       {/* Our Story */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="prose prose-lg max-w-none text-navy-600">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="grid md:grid-cols-[320px_1fr] gap-10 items-start">
+            {/* Founder portrait */}
+            <div className="md:sticky md:top-24">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/seth-laws.jpg"
+                alt="Seth Laws, Founder of Meridian Estate Watch"
+                className="w-full max-w-xs mx-auto md:max-w-none rounded-2xl shadow-lg"
+              />
+              <p className="text-center text-sm text-navy-500 mt-3 font-semibold">
+                Seth Laws · Founder
+              </p>
+            </div>
+            <div className="prose prose-lg max-w-none text-navy-600">
             <h2 className="text-3xl font-bold text-navy-900 mb-6">Our Story</h2>
             <p className="mb-5 leading-relaxed">
               Welcome to Meridian Estate Watch, your trusted partner in home and
@@ -99,6 +112,7 @@ export default function AboutPage() {
             <p className="leading-relaxed">
               That&apos;s exactly who we are.
             </p>
+            </div>
           </div>
         </div>
       </section>
