@@ -71,6 +71,22 @@ export default function AboutPage() {
               <p className="text-center text-sm text-navy-500 mt-3 font-semibold">
                 Seth Laws · Founder
               </p>
+            <div className="mt-6 text-center">
+  <p className="text-sm font-semibold text-navy-700 mb-2">
+    Certified Home Watch Professional
+  </p>
+
+  {/* eslint-disable-next-line @next/next/no-img-element */}
+  <img
+    src="/chwp-logo.png"
+    alt="NHWA Certified Home Watch Professional"
+    className="w-40 mx-auto"
+  />
+
+  <p className="text-sm font-semibold text-navy-700 mt-2">
+    CHWP Certification No. 08261006
+  </p>
+</div>  
             </div>
             <div className="prose prose-lg max-w-none text-navy-600">
             <h2 className="text-3xl font-bold text-navy-900 mb-6">Our Story</h2>
